@@ -9,7 +9,7 @@
 html, body {
     background-color: darkgrey;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0;
     padding: 0;
 }
@@ -56,7 +56,7 @@ h1 {
 }
 
 .section {
-    padding: 1rem;
+    padding: 1rem 1rem 0;
 }
 
 
@@ -98,7 +98,7 @@ h1 {
 }
 
 .profession--title {
-    margin: 0.4rem;
+    margin: 0.8rem 0.4rem;
 }
 
 
@@ -126,8 +126,9 @@ h1 {
     margin: 0.2rem 0;
 }
 
-.description--block p b {
-    font-size: 1.1rem;
+.description--block p b,
+.description--block ul li b {
+    font-size: 1.2rem;
 }
 
 .description--block p.title {
@@ -135,7 +136,12 @@ h1 {
 }
 
 .contact--info {
+    font-size: 0.9rem;
     margin: 0.6rem 0.4rem;
+}
+
+.contact--block ul {
+    padding-left: 1.2rem;
 }
 
 
