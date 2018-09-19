@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="A full stack software developer in Seattle, WA.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:description" content="A full stack software developer in Seattle, WA.">
+        <meta property="og:title" content="Matthew McCord">
+        <meta property="og:type" content="website" />
+
+        <title>Resume - Matthew McCord Software Developer</title>
+
+        <style>
+            /*
+                Green: #3bddbb
+                Yellow: #d4af37
+            */
+
+            @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+            /* MAIN */
+            html, body {
+                background-color: darkgrey;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px;
+                margin: 0;
+                padding: 0;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .content {
+                margin: 2rem auto;
+                width: 8.5in;
+            }
+
+            h1, h2, h3 {
+                font-family: Helvetica, sans-serif;
+                font-weight: bold;
+            }
+
+            h1 {
+                font-size: 4rem;
+                line-height: 3.6rem;
+                margin: 0;
+            }
+
+            h3 a {
+                font-weight: normal;
+            }
+
+            a {
+                color: black;
+            }
+
+
+            /* PAGE */
+            .page {
+                background-color: white;
+                border-left: 1rem solid #d4af37;
+                border-bottom: 1rem solid #3bddbb;
+                display: grid;
+                height: 11in;
+                padding: 2rem;
+                width: 100%;
+            }
+
+            .page--one {
+                grid-template-areas: 'contact recognition'
+                                    'experience experience';
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 4fr;
+                margin-bottom: 2rem;
+            }
+
+            .page--two {
+                grid-template-areas: 'technical'
+                                    'projects';
+                grid-template-rows: 13rem 1fr;    
+            }
+
+            .section {
+                padding: 1rem 1rem 0;
+            }
+
+
+
+            /* PAGE ONE ITEMS */
+            .contact {
+                /* background-color: blue; */
+                grid-area: contact;
+            }
+
+            .contact p {
+                margin-top: 1rem;
+            }
+
+            .recognition {
+                /* background-color: pink; */
+                grid-area: recognition;
+            }
+
+            .experience {
+                /* background-color: orange;    */
+                grid-area: experience;
+            }
+
+
+
+            /* PAGE TWO ITEMS */
+            .technical {
+                grid-area: technical;
+            }
+
+            .projects {
+                grid-area: projects;
+            }
+
+
+            /* TITLES */
+            .title {
+                margin: 1rem 0.4rem 0.4rem 1.4rem;
+            }
+
+            .sub-title {
+                font-size: 0.8rem;
+                margin: 0.4rem 0.4rem 0.4rem 1.4rem;
+            }
+
+            .profession--title {
+                margin: 0.8rem 0.4rem;
+            }
+
+
+
+            /* DESCRIPTIONS */
+            .description {
+                margin: 0.4rem 0.4rem 0.4rem 2.8rem;
+            }
+
+            .description--block p,
+            .description--block ul li {
+                line-height: 1.3rem;
+            }
+
+            .description--block p {
+                margin: 0.4rem 0.4rem 0.4rem 2.8rem;
+            }
+
+            .description--block ul {
+                margin: 0;
+                padding-left: 4.2rem;
+            }
+
+            .description--block ul li {
+                line-height: 1.4rem;
+                margin: 0.4rem 0;
+            }
+
+            .description--block p b,
+            .description--block ul li b {
+                font-size: 1.125rem;
+            }
+
+            .description--block p.title {
+                font-weight: bolder;
+                /* text-decoration: underline; */
+            }
+
+            .contact--info {
+                font-size: 0.9rem;
+                margin: 0.6rem 0.4rem;
+            }
+
+            .contact--block ul {
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin: 1rem 0;
+                padding-left: 1.8rem;
+            }
+
+            .contact--block ul li {
+                margin: 0.6rem 0;
+            }
+
+
+
+            /* TITLE BANNERS */
+            .title-banner {
+                background-color: #3bddbb;
+                border-radius: 0.4rem;
+                color: white;
+                padding: 0.6rem 1.5rem 0.6rem 3rem;
+                position: relative;
+                text-transform: uppercase;
+                width: fit-content;
+            }
+
+            .title-banner::before {
+                content: '';
+                border: 0.3rem solid #d4af37;
+                border-radius: 0.2rem;
+                border-right: none;
+                height: 2.9rem;
+                left: 1.5rem;
+                margin-bottom: 1rem;
+                position: absolute;
+                top: -0.3rem;
+                width: 1.5rem;
+            }
+
+            .title-banner h2 {
+                margin :0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="page page--one">
+                <div class="section contact">
+                    <h1>Matthew</h1>
+                    <h1>McCord</h1>
+                    <h3 class="title profession--title">Full Stack Software Developer</h3>
+                    <p class="contact--info">615-218-9045 • mattm.eternal@gmail.com • Seattle, WA</p>
+                    <div class="contact--block">
+                        <ul>
+                            <li><a href="http://mccordinator.cool" target="_blank">mccordinator.cool</a></li>
+                            <li><a href="https://www.linkedin.com/in/mccordinator/" target="_blank">linkedin.com/in/mccordinator/</a></li>
+                            <li><a href="https://github.com/mccordgh" target="_blank">github.com/mccordgh</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section recognition">
+                    <div class="title-banner">
+                        <h2>Recognition</h2>
+                    </div>
+
+                    <h3 class="title" >Awarded: Most Valuable Teammate</h3>
+                    <p class="sub-title">Nashville Software School • Nashville, TN</p>
+                    <div class="description--block">
+                        <ul>
+                            <li>For showing exemplary leadership abilities, helping teammates achieve success, and assisting anyone needing help.</li>
+                        </ul>
+                    </div>
+    
+                    <h3 class="title" >Nominated: Top Developer</h3>
+                    <p class="sub-title">Nashville Software School • Nashville, TN</p>
+                    <div class="description--block">
+                        <ul>
+                            <li class="description">For showing exemplary abilities to grasp the core concepts, going above and beyond the curriculum, and being a great teammate.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section experience">
+                    <div class="title-banner">
+                        <h2>Experience</h2>
+                    </div>
+                    
+                    <h3 class="title" >Software Developer • Apr 2017 - Sep 2018</h3>
+                    <p class="sub-title">Bernard Health • Nashville, TN</p>
+                    <p class="sub-title">Software Development Team Member working on <b>BerniePortal</b>, an online all-in-one HR platform.</p>
+                    
+                    <div class="description--block">
+                        <p class="title">Front end projects using <b>CSS3</b>, <b>Gulp</b>, <b>HTML5</b>, <b>JavaScript</b>, <b>SASS</b>, <b>Vue.js</b>:</p>
+                        <ul>
+                            <li>Implemented a much needed interface for the Client Success team to view and manage their client's accounts, as well as any other associated children accounts, from a single area.</li>
+                            <li>Completed a UI overhaul of two product areas related to PDF and form mapping. This created a much more intuitive and concrete workflow for users mapping fields to PDFs.</li>
+                            <li>Adapted the billing area to allow users to regenerate bills, and save up to three previous bill generations as downloadable PDFs and CSVs. This allowed users to correct mistakes without having to call in for support, inevitably pulling a developer away from their work to manually regenerate a bill.</li>
+                        </ul>
+
+                        <p class="title">Full stack projects using <b>Laravel</b>, <b>MySQL</b>, <b>PHP</b>, and the aforementioned front end technologies.</p>
+                        <ul>
+                            <li>Created a new PDF field type that allows for the mapping of multiple choice questions. During benefit enrollment the questions are asked to each employee, with all answers mapping to an associated PDF.</li>
+                            <li>Realized a new feature that allows user creation of health benefit plan templates, which can be imported across multiple users and used to build out multiple plans with similar details. These built out plans update when the parent template is updated. This took a lot of stress off of users that needed several plans with nearly identical information. With this new feature, they were able to simply create a plan template that could be used to fix mistakes or create plans with minor differences very easily.</li>
+                        </ul>
+    
+                        <p class="title">Day to day responsibilities:</p>
+                        <ul>
+                            <li>Utilize <b>Xdebug</b> and <b>Laravel logs</b> for debugging, <b>Git and Github</b> for version control, <b>Homestead</b> and <b>Vagrant</b> with <b>VirtualBox</b> to simulate our production environment locally, <b>iTerm2</b>, and <b>Sequel Pro</b> for database management.</li>
+                            <li>Update, refactor, and maintain legacy code consiting of <b>jQuery</b>, <b>JavaScript</b>, <b>PHP</b>, <b>Drupal</b>.</li>
+                            <li>Review code pull requests for local and remote teams.</li>
+                            <li>Mentoring and support for junior developers.</li>
+                            <li>Maintain mobile app written in <b>Objective-C</b>, and make sure any updates pass <b>iOS App Store Review</b>.</li>
+                        </ul>
+                   </div>
+
+                    <h3 class="title" >Apprentice Software Developer</h3>
+                    <p class="sub-title">Nashville Software School • Nashville, TN</p>
+                    <div class="description--block">
+                        <p>• Developed web apps using <b>AngularJS</b>, <b>CSS3</b>, <b>Django</b>, <b>HTML5</b>, <b>JavaScript</b>, and <b>Python</b>.</p>
+                        <p>• Worked with multiple teams to meet <b>AGILE</b> sprint and project deadlines.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page page--two">
+                <div class="section projects">
+                    <div class="title-banner">
+                        <h2>Side Projects</h2>
+                    </div>
+                    
+                    <h3 class="title" >The CORE • <a href="https://mccordgh.github.io/the_line_js13kgames_2018/" target="_blank">https://mccordgh.github.io/the_line_js13kgames_2018/</a></h3>
+                    <div class="description--block">
+                        <ul>
+                            <li>A game written from scratch in <b>JavaScript</b> for the <a href="https://js13kgames.com/" target="_blank">js13kgames.com</a> 2018 code golfing competition.</a></li>
+                            <li>Find four keys and drop them in the mind control machine to save the factory workers, and the world from total control!</li>
+                            <li>The js13kgames competition requires that the final build is contained in a single zip file, under 13kb, and able to run completely offline.</li>
+                            <li>source: <a href="https://github.com/mccordgh/the_line_js13kgames_2018" target="_blank">https://github.com/mccordgh/the_line_js13kgames_2018</a></li>
+                        </ul>
+                    </div>
+
+                    <h3 class="title">ToDon't List • <a href="https://mccordgh.github.io/to_dont_list_client/" target="_blank">https://mccordgh.github.io/to_dont_list_client/</a></h3>
+                    <div class="description--block">
+                        <ul>
+                            <li>A twist on the classic "ToDo List" app using <b>Express</b>, <b>React</b>, <b>Node.js</b>, and mLab for <b>MongoDB</b>.</li>
+                            <li>The <b>Node.js API</b> is deployed to <b>Heroku</b>.</li>
+                            <li>The <b>React</b> app is deployed to <b>Github Pages</b>.</li>
+                            <li>client source: <a href="https://github.com/mccordgh/to_dont_list_client" target="_blank">https://github.com/mccordgh/to_dont_list_client</a></li>
+                            <li>api source: <a href="https://github.com/mccordgh/to_dont_list_api" target="_blank">https://github.com/mccordgh/to_dont_list_api</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section technical">
+                    <div class="title-banner">
+                        <h2>Technical Skills</h2>
+                    </div>
+                    
+                    <h3 class="title" >Strong Understanding</h3>
+                    <div class="description--block">
+                        <ul>
+                            <li><b>CSS3, ES6, Git, HTML5, JavaScript, Laravel, PHP, Vue.js</b></li>
+                        </ul>
+                    </div>
+
+                    <h3 class="title" >Knowledgeable</h3>
+                    <div class="description--block">
+                        <ul>
+                            <li><b>Gulp, Node.js, React, SASS, SQL, Unity, Webpack</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
