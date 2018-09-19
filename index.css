@@ -34,6 +34,13 @@ h1 {
     margin: 0;
 }
 
+h3 a {
+    font-weight: normal;
+}
+
+a {
+    color: black;
+}
 
 
 /* PAGE */
@@ -53,6 +60,12 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr;
     margin-bottom: 2rem;
+}
+
+.page--two {
+    grid-template-areas: 'technical'
+                         'projects';
+    grid-template-rows: 13rem 1fr;    
 }
 
 .section {
@@ -84,7 +97,13 @@ h1 {
 
 
 /* PAGE TWO ITEMS */
+.technical {
+    grid-area: technical;
+}
 
+.projects {
+    grid-area: projects;
+}
 
 
 /* TITLES */
@@ -123,16 +142,18 @@ h1 {
 }
 
 .description--block ul li {
-    margin: 0.2rem 0;
+    line-height: 1.4rem;
+    margin: 0.4rem 0;
 }
 
 .description--block p b,
 .description--block ul li b {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
 }
 
 .description--block p.title {
-    text-decoration: underline;
+    font-weight: bolder;
+    /* text-decoration: underline; */
 }
 
 .contact--info {
@@ -141,7 +162,14 @@ h1 {
 }
 
 .contact--block ul {
-    padding-left: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding-left: 1.8rem;
+}
+
+.contact--block ul li {
+    margin: 0.6rem 0;
 }
 
 
